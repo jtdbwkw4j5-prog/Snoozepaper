@@ -1,0 +1,147 @@
+/*
+  SnoozePaper site styles
+
+  The design uses muted colors and a text‑first layout to create a calm, neutral reading experience.  It avoids bright colors and loud graphics and focuses on readability and accessibility.
+*/
+
+/* Basic resets and typography */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #f7f8fa; /* off‑white background for reduced glare */
+  color: #333333; /* dark text for good contrast */
+  line-height: 1.6;
+}
+
+a {
+  color: #0a568c; /* muted blue for links */
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Layout helpers */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  background-color: #f7f8fa;
+  border-bottom: 1px solid #e0e3e8;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+nav a {
+  color: #333333;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #0a568c;
+}
+
+.hero {
+  background-color: #e9eef3; /* pale blue‑gray */
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  margin: 2rem 0;
+}
+
+.section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.section p {
+  margin-top: 0.5rem;
+}
+
+/* Ledger entry formatting */
+.ledger-entry {
+  background-color: #ffffff;
+  border: 1px solid #e0e3e8;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.ledger-entry h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.ledger-meta {
+  font-size: 0.875rem;
+  color: #555555;
+  margin-bottom: 0.5rem;
+}
+
+.ledger-summary {
+  margin-bottom: 0.5rem;
+}
+
+.ledger-notes {
+  font-size: 0.875rem;
+  color: #555555;
+  margin-top: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #e0e3e8;
+  font-size: 0.875rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  nav {
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
